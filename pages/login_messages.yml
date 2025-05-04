@@ -1,0 +1,7 @@
+REGISTRATION_SUCCESS_MESSAGE : "נרשמת בהצלחה לאתר"
+MISSING_FIELD : "גם את זה אנחנו צריכים בבקשה"
+INVALID_EMAIL_FIELD : "סליחה, משהו לא בסדר עם כתובת המייל"
+INVALID_PASSWORD_GENERATED : "הסיסמה צריכה להכיל את כל התווים הנדרשים מטה"
+MISSING_T_AND_C_CHECKBOX : "הופ! אנחנו מבינים שבא לך כבר לקרוא ספרים, אבל צריך לאשר שקראת את תנאי השימוש קודם"
+USER_EXISTS : ""
+INVALID_USERNAME_OR_PASSWORD : ""
