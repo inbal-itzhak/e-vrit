@@ -82,12 +82,13 @@ class NewUserPage(BasePage):
                 return True
         except Exception as e:
             print(f"error: {e}")
+            return False
 
-    @allure.step("close finish registration window")
+    @allure.step("Close 'finish registration' window")
     def close_success_modal(self):
         self.click(self._CLOSE_SUCCESS_MODAL)
 
-    @allure.step("verify correct message shows when email is missing in registration")
+    @allure.step("Validate correct message shows when email is missing in registration")
     def check_missing_email_message(self):
         try:
             test_data = self.load_login_messages_yaml("login_messages.yml")
@@ -98,7 +99,7 @@ class NewUserPage(BasePage):
         except ValueError:
             print(f"value error: {ValueError}")
 
-    @allure.step("verify correct message shows when password is missing in registration")
+    @allure.step("Validate correct message shows when password is missing in registration")
     def check_missing_password_message(self):
         try:
             test_data = self.load_login_messages_yaml("login_messages.yml")

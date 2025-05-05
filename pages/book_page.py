@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page, Locator
 from pages.base_page import BasePage
 
@@ -12,7 +13,9 @@ class BookPage(BasePage):
     _digital_book_attr = "digital-btn"
     _printed_book_attr = "printed-btn"
 
+    @allure.step("Validate book title")
     def get_book_title(self):
+        self.page.wait_for_selector(self._BOOK_TITLE)
         return self.get_text(self._BOOK_TITLE)
 
     def is_digital_copy(self, book_copy_locator: Locator):

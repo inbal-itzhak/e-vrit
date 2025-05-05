@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 from pages.base_page import BasePage
 
@@ -16,12 +17,15 @@ class NavMenu(BasePage):
     _HOVER_CART_ITEMS = ".hover__cart-item.item"
     _SEARCH_FIELD = ".navbar  .inner-search-menu .txtSearch"
 
+    @allure.step("Click on 'My account' button")
     def click_on_my_account(self):
         self.click(self._MY_ACCOUNT_LINK)
 
+    @allure.step("Click on 'Wishlist' link")
     def click_on_wishlist(self):
         self.click(self._WISHLIST_LINK)
 
+    @allure.step("Validate number of items in shopping cart")
     def get_num_of_items_in_cart(self):
         num_of_items_txt = self.get_text(self._NUM_OF_ITEMS_IN_CART)
         try:
@@ -29,6 +33,7 @@ class NavMenu(BasePage):
         except TypeError:
             print(f"unable to parse num of items txt, {TypeError}")
 
+    @allure.step("Click on 'Shopping Cart' link")
     def click_on_shopping_cart(self):
         self.click(self._SHOPPING_CART_LINK)
 

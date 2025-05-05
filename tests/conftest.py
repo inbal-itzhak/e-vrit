@@ -26,6 +26,7 @@ def setup_page(request, page: Page):
     page.close()
 
 
+@allure.step("Generate random email")
 def generate_random_email(email_vendor):
     local_part_length = random.randint(8, 15)
     allowed_chars = string.ascii_lowercase + "._-"
@@ -46,6 +47,7 @@ def registration_email(request):
     random_email = generate_random_email(email_vendor)
     print(f"\nGenerated registration email for session: {random_email}")
     return random_email
+
 
 @pytest.fixture(scope="session")
 def password(request):

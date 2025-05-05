@@ -7,8 +7,8 @@ class ConfigReader:
 
     @staticmethod
     def read_config(section, key):
-        # root_dir = sys.path[0]
-        root_dir = os.path.dirname(os.path.abspath(__file__))
+        root_dir = sys.path[0]
+        # root_dir = os.path.dirname(os.path.abspath(__file__))
         config = configparser.ConfigParser()
         try:
             config.read(root_dir + '/pytest.ini')

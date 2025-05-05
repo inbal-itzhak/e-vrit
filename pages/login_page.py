@@ -21,9 +21,8 @@ class LoginPage(BasePage):
     _MISSING_PASS_MESSAGE = "#uw44a18ff"
     _LOGGED_IN_USER = ".header-user-email"
 
-    @allure.step("login with email: {valid_email}. pass: {password} ")
+    @allure.step("Login with email: {valid_email}. Password: {password} ")
     def valid_login(self, valid_email, password):
-        self.click(self._MY_ACCOUNT_LINK)
         display_style = self.check_login_modal_open()
         if display_style:
             self.fill_text(self._EMAIL_LOGIN_FIELD, valid_email)
@@ -32,7 +31,7 @@ class LoginPage(BasePage):
         else:
             print(f"user {self.check_logged_in_user()} is already logged in")
 
-    @allure.step("get the logged in user email")
+    @allure.step("Validate logged in user email")
     def check_logged_in_user(self):
         try:
             self.click(self._MY_ACCOUNT_LINK)
@@ -40,13 +39,13 @@ class LoginPage(BasePage):
         except Exception as e:
             print(f"element not found, {e}")
 
-    @allure.step("check login window opens")
+    @allure.step("Validate login window opens")
     def check_login_modal_open(self):
         account_modal_el = self.page.locator(self._ACCOUNT_MODAL)
         display_style = account_modal_el.evaluate("el => window.getComputedStyle(el).display")
         if display_style != "none":
             return True
 
-    @allure.step("fill in {email_addr} in email address field")
+    @allure.step("Fill in {email_addr} in email address field")
     def fill_in_email_for_registration(self, email_addr):
         self.fill_text(self._EMAIL_LOGIN_FIELD, email_addr)

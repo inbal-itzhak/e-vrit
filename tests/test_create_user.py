@@ -22,8 +22,9 @@ class TestCreateUser(BaseTest):
     @allure.description("login with created user")
     @allure.title("login")
     def test_login(self, registration_email, password):
+        self.nav_menu.click_on_my_account()
         assert self.login_page.check_login_modal_open() is True
-        self.login_page.valid_login(registration_email,password)
+        self.login_page.valid_login(registration_email, password)
         assert self.login_page.check_logged_in_user() == registration_email
 
     data = ["הילד שהציל את הקשת", "המתווך"]
@@ -32,8 +33,11 @@ class TestCreateUser(BaseTest):
     @allure.description("search book {text}")
     @allure.title("search book {text}")
     def test_search_book(self, registration_email, password, text):
+        self.nav_menu.click_on_my_account()
         self.login_page.valid_login(registration_email, password)
         self.search_results_page.search_book(text)
         self.search_results_page.search_results(text)
         book_title = self.book_page.get_book_title()
         assert text in book_title
+
+

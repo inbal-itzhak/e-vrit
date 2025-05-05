@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3723d2fb-fdb0-410e-9995-93e0fb198fde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-vrit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nav_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/new_user_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_user_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/search_results_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search_results_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_create_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/config_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config_reader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +50,13 @@
     "Python tests.Python tests for test_create_user.TestCreateUser.executor": "Run",
     "Python tests.Python tests for test_create_user.TestCreateUser.test_create_new_user.executor": "Run",
     "Python tests.Python tests for test_create_user.TestCreateUser.test_create_valid_user.executor": "Run",
-    "Python tests.Python tests for test_create_user.TestCreateUser.test_search_book.executor": "Debug",
+    "Python tests.Python tests for test_create_user.TestCreateUser.test_login.executor": "Run",
+    "Python tests.Python tests for test_create_user.TestCreateUser.test_search_book.executor": "Run",
     "Python tests.pytest for tests.test_create_user.TestCreateUser.test_create_new_user.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Dev/Automatiom_Course/Python/iverit/e-vrit",
+    "last_opened_file_path": "D:/Dev/Automatiom_Course/Python/iverit",
     "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
@@ -102,6 +112,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_create_user.TestCreateUser.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="e-vrit" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
+      <option name="_new_target" value="&quot;test_create_user.TestCreateUser.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_create_user.TestCreateUser.test_search_book" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="e-vrit" />
       <option name="ENV_FILES" value="" />
@@ -117,37 +142,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.test_create_user.TestCreateUser.test_create_new_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="e-vrit" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;chromium&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_create_user.TestCreateUser.test_create_new_user&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_login" />
       <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_search_book" />
       <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser" />
       <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_valid_user" />
-      <item itemvalue="Python tests.pytest for tests.test_create_user.TestCreateUser.test_create_new_user" />
       <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_new_user" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_search_book" />
+        <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_login" />
         <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser" />
         <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_valid_user" />
         <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_new_user" />
-        <item itemvalue="Python tests.pytest for tests.test_create_user.TestCreateUser.test_create_new_user" />
       </list>
     </recent_temporary>
   </component>
@@ -174,8 +182,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/search_results_page.py</url>
-          <line>19</line>
+          <line>23</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/search_results_page.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
